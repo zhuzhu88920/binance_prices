@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Output (runtime generated)
+output/
+
+# Environment variables (contains secrets)
+.env
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
