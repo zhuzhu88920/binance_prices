@@ -17,10 +17,10 @@ if %errorlevel% equ 0 (
     echo      [OK] Edge is running on port 9222
 ) else (
     echo      [!!] Edge not found, launching...
-    start "" msedge --remote-debugging-port=9222
-    echo      Please login to Binance and open the grid trading page
-    echo      Waiting 8 seconds...
-    timeout /t 8 /nobreak >nul
+    start "" msedge --remote-debugging-port=9222 --user-data-dir="%DIR%edge-profile"
+    echo      Please login to Binance in the NEW Edge window (separate profile)
+    echo      Waiting 12 seconds...
+    timeout /t 12 /nobreak >nul
 )
 
 REM === 2. Kill leftover node processes ===

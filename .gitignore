@@ -4,6 +4,9 @@ node_modules/
 # Output (runtime generated)
 output/
 
+# Edge separate profile (runtime generated, contains login session)
+edge-profile/
+
 # Environment variables (contains secrets)
 .env
 
