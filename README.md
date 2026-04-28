@@ -81,11 +81,9 @@ node.exe auto-scrape.js --bark YOUR_BARK_KEY
 ```
 binance/
 ├── start.bat               # ⭐ 一键启动脚本（重启电脑后双击即可）
-├── auto-scrape.js          # ⭐ 主脚本：定时抓取 + Bark推送（日常使用这个）
+├── auto-scrape.js          # ⭐ 主脚本：定时抓取 + Bark推送
 ├── columns.conf            # 列开关配置（控制CSV输出哪些字段）
 ├── push-template.txt       # Bark推送排版模板（自定义手机通知格式）
-├── 11.js                   # Binance API 诊断脚本（调试用）
-├── extract-grid-table.js   # 单次手动抓取脚本（调试用）
 ├── package.json            # npm 依赖清单
 ├── package-lock.json       # 依赖版本锁文件
 ├── README.md               # 项目文档
@@ -100,8 +98,6 @@ binance/
 |------|------|:---:|
 | **`start.bat`** | 一键启动：自动检测/启动 Edge 调试端口 → 清理残留进程 → 启动 `auto-scrape.js` | ✅ 入口 |
 | **`auto-scrape.js`** | 主程序。定时循环抓取、币价提取、模板渲染、Bark推送，全部集成 | ✅ 核心 |
-| `11.js` | Binance API 诊断脚本，用于测试 API 连通性和签名是否正确 | 🔧 调试用 |
-| `extract-grid-table.js` | 手动执行一次的单次抓取。适合调试或一次性使用 | 🔧 调试用 |
 | **`package.json`** | npm 依赖清单。声明项目需要哪些包 | ✅ 必需 |
 | **`package-lock.json`** | 依赖版本锁定。不可删除 | ✅ 必需 |
 | `columns.conf` | 列开关配置，控制 CSV 输出哪些字段 | ✅ 配置 |
