@@ -10,6 +10,9 @@ edge-profile/
 # Environment variables (contains secrets)
 .env
 
+# WorkBuddy workspace data
+.workbuddy/
+
 # OS files
 Thumbs.db
 Desktop.ini
